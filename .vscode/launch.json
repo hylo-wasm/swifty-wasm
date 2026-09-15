@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:swifty-wasm}",
+            "name": "Debug swifty-wasm",
+            "target": "swifty-wasm",
+            "configuration": "debug",
+            "preLaunchTask": "swift: Build Debug swifty-wasm"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:swifty-wasm}",
+            "name": "Release swifty-wasm",
+            "target": "swifty-wasm",
+            "configuration": "release",
+            "preLaunchTask": "swift: Build Release swifty-wasm"
+        }
+    ]
+}
