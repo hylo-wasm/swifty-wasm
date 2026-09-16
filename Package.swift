@@ -4,16 +4,14 @@
 import PackageDescription
 
 let package = Package(
-    name: "swifty-wasm",
+    name: "SwiftyWasm",
     targets: [
-        // Targets are the basic building blocks of a package, defining a module or a test suite.
-        // Targets can depend on other targets in this package and products from dependencies.
         .executableTarget(
-            name: "swifty-wasm"
+            name: "SwiftyWasm"
         ),
         .testTarget(
-            name: "swifty-wasmTests",
-            dependencies: ["swifty-wasm"]
+            name: "SwiftyWasmTests",
+            dependencies: ["SwiftyWasm"]
         ),
     ],
     swiftLanguageModes: [.v6]
