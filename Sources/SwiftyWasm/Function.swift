@@ -1,3 +1,4 @@
+/// A monomorphic function in wasm bytecode.
 struct Function {
 
     /// The type of a function.
