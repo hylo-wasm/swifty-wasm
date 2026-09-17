@@ -5,10 +5,10 @@ public struct Function {
     public struct Signature {
 
         /// The function parameters, in argument-passing order.
-        public let parameters: [Int]
+        public let parameters: [ValueType]
 
         /// The result types of the function, in the order in which values are returned.
-        public let returnTypes: [Int]
+        public let returnTypes: [ValueType]
 
     }
 
