@@ -1,13 +1,13 @@
 ///
-struct GlobalVariable {
+public struct GlobalVariable {
 
-    ///
-    public let type: ValueType
+  ///
+  public let type: ValueType
 
-    ///
-    public let mutable: Bool
+  ///
+  public let mutable: Bool
 
-    ///
-    ///initalization expression: todo
+  ///
+  ///initalization expression: todo
 
 }

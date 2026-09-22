@@ -8,7 +8,7 @@ public struct Module {
     public let start: Int32
 
     /// globals
-    public let globalVariables: [GlobalVariable]
+    public let globalVariables: [GlobalVariable] = []
 
     /// memory
     public struct Memory {
