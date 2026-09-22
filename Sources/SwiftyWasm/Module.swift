@@ -8,7 +8,7 @@ public struct Module {
     public let start: Int32
 
     /// globals
-    public let globalVariables: [ValueType]
+    public let globalVariables: [GlobalVariable]
 
     /// memory
     public struct Memory {
@@ -23,6 +23,9 @@ public struct Module {
         public let maxPages: UInt32
 
     }
+
+    ///memories
+    public var memories: [Memory]
 
     /// data section
     public struct DataSection {
