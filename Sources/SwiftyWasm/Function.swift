@@ -1,6 +1,9 @@
 /// A monomorphic function in wasm bytecode.
 public struct Function {
 
+  /// Name of the function as it occurred in the original code.
+  public let name: String
+
   /// The type of a function.
   public struct Signature {
 
@@ -16,6 +19,6 @@ public struct Function {
   public let type: Signature
 
   /// The instructions in the function, in execution order.
-  public let body: [any Instruction]
+  public let body: Expression
 
 }
