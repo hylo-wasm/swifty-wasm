@@ -1,13 +1,13 @@
-///
+/// A wasm global variable defintion.
 public struct GlobalVariable {
 
-  ///
+  /// Type of the value that this global variable stores.
   public let type: ValueType
 
-  ///
-  public let mutable: Bool
+  /// Flag to determine mutability.
+  public let isMutable: Bool
 
-  ///
-  ///initalization expression: todo
+  /// A constant expression whose result type matches "type".
+  public let initializer: Expression
 
 }

@@ -19,6 +19,6 @@ public struct Function {
   public let type: Signature
 
   /// The instructions in the function, in execution order.
-  public let body: [any Instruction]
+  public let body: Expression
 
 }

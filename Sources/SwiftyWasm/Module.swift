@@ -1,34 +1,31 @@
 /// Container for the whole wasm code.
 public struct Module {
 
-    /// Combination of code section, type section and function section.
-    public let functions: [Function]
+  /// Combination of code section, type section and function section.
+  public let functions: [Function]
 
-    /// Index of the start function in the functions.
-    public let start: Int32
+  /// Index of the start function in the functions.
+  public let start: Int32
 
-    /// globals
-    public let globalVariables: [GlobalVariable] = []
+  /// Globals in the module's global variable index.
+  public let globalVariables: [GlobalVariable] = []
 
-    /// memory
-    public struct Memory {
+  /// Memory Component
+  public struct Memory {
 
-        ///name of memory
-        public let name: String
+    /// Name of the memory
+    public let name: String?
 
-        /// Min pages
-        public let minPages: UInt32
+    /// Minimum and initial size in pages.
+    public let minPages: UInt
 
-        /// Max pages
-        public let maxPages: UInt32
+    /// Maximum size in pages, if nil then unbounded.
+    public let maxPages: UInt?
 
-    }
+  }
 
-    ///memories
-    public var memories: [Memory]
+  /// Memories in the module's memory index space.
+  public var memories: [Memory]
 
-    /// data section
-    public struct DataSection {
-
-    }
+  /// TODO: data section
 }
