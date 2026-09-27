@@ -1,13 +1,15 @@
-/// A wasm global variable defintion.
+/// A wasm global variable.
 public struct GlobalVariable {
 
-  /// Type of the value that this global variable stores.
-  public let type: ValueType
+  /// The type of `self`.
+  public var type: ValueType {
+    initializer.type.returnTypes.first!
+  }
 
-  /// Flag to determine mutability.
+  /// `true` iff self is allowed to be mutated.
   public let isMutable: Bool
 
-  /// A constant expression whose result type matches "type".
-  public let initializer: Expression
+  /// A nullary function returning the initial value of 'self'.
+  public let initializer: Function
 
 }

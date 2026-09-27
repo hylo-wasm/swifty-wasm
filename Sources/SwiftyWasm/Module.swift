@@ -27,5 +27,5 @@ public struct Module {
   /// Memories in the module's memory index space.
   public var memories: [Memory]
 
-  /// TODO: data section
+  /// TODO: data section,import, ex
 }
