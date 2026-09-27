@@ -9,7 +9,7 @@ public struct GlobalVariable {
   /// `true` iff self is allowed to be mutated.
   public let isMutable: Bool
 
-  /// A nullary function returning the initial value of 'self'.
+  /// A nullary function returning the initial value of `self`.
   public let initializer: Function
 
 }

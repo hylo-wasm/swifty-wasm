@@ -1,7 +1,7 @@
 /// A monomorphic function in wasm bytecode.
 public struct Function {
 
-  /// Name of the function as it occurred in the original code.
+  /// The name
   public let name: String?
 
   /// The type of a function.
