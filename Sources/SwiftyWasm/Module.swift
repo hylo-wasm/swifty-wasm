@@ -7,8 +7,8 @@ public struct Module {
   /// Index of the start function in the `functions`.
   public let start: Int32
 
-  /// Globals in the module's global variable index.
-  public let globalVariables: [GlobalVariable] = []
+  /// The global variables allocated in static memory of the module.
+  public let variables: [GlobalVariable]
 
   /// The requirements for the Wasm runtime's memories,
   /// in the same order as the memories.
